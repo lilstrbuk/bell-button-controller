@@ -28,8 +28,8 @@ elif sys.argv[1] == "on" and not float(sys.argv[2]) == 0: # sys.argv is the comm
 	turnOff()
 
 elif GPIO.input(15) == GPIO.HIGH: # tests button position  NEED way to make sure it does not get stuck here
-		turnOn()
-		print("button being pressed")
+	turnOn()
+	print("button being pressed")
 
 else:
 	#turnOff()
